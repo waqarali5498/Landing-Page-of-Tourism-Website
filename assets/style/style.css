@@ -1,0 +1,394 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-color:white;
+    --secondary-color:black;
+}
+.card{
+    margin: 1.2em 0;
+}
+/* Header */
+header{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../image/banner.jpg) center/cover no-repeat ;
+
+}
+/* Menu */
+.nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 1em 0;
+}
+.nav img{
+    height: 4em;
+}
+
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin: 0 0.5em;
+    font-size: 1.1em;
+    color: white;
+}
+
+/* Content */
+header .title{
+height: 70%;
+width: 80%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin: auto;
+color:white ;
+}
+
+header .title h1{
+font-size: 4.4em;
+}
+
+header .title p{
+font-size: 1.2em;
+}
+
+/* Planned Tours */
+.plannedTours{
+    padding: 2em 0;
+}
+
+.plannedTours .heading{
+text-align: center;
+padding: 1.2em 0;
+
+}
+
+.plannedTours .heading h1{
+font-size: 2.2em;
+}
+
+.plannedTours .heading p{
+font-size: 1.2em;
+
+}
+
+.plannedTours .cards{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+
+.plannedTours .cards .card{
+width: 18em;
+border-radius: 1em;
+background-color: rgba(126, 89, 161, 0.48);
+padding-bottom: 1em;
+
+}
+
+.plannedTours .cards .card img{
+    height: 12em;
+    width: 18em;
+    border-top-left-radius:1em ;
+border-top-right-radius: 1em;  
+}
+.plannedTours .cards .card .text-section{
+padding:0 1.2em;
+}
+
+.plannedTours .cards .card .text-section h1{
+    padding-bottom: 0.6em;
+}
+.plannedTours .cards .card .text-section p{
+    padding-bottom: 0.6em;
+
+}
+
+.plannedTours .cards .card .text-section button{
+padding: 0.3em;
+color: white;
+background-color: gray;
+border-radius:08px;
+font-weight: bolder;
+border: none;
+
+}
+
+/* Explore */
+.explore{
+height: 80vh;
+background-image: url(../image/effect.jpg);
+background-repeat: no-repeat;
+opacity: 0.9;
+background-size: cover;
+background-attachment: fixed;
+font-size: 4em;
+color: aliceblue;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+
+/* Value Trips */
+
+.valueTrips{
+    padding: 2em 0;
+    
+}
+
+.valueTrips .heading{
+text-align: center;
+padding: 1.2em 0;
+}
+
+.valueTrips .heading h1{
+font-size: 2.2em;
+}
+
+.valueTrips .heading p{
+font-size: 1.2em;
+
+}
+
+.valueTrips .cards{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+
+}
+
+.valueTrips .cards .card{
+width: 21em;
+border-radius: 1em;
+background-color: rgba(126, 89, 161, 0.48);;
+padding-bottom: 1em;
+}
+
+.valueTrips .cards .card img{
+    height: 12em;
+    width: 21em;
+    border-top-left-radius:1em ;
+border-top-right-radius: 1em;  
+}
+.valueTrips .cards .card .text-section{
+/* padding:0 1.2em; */
+}
+
+.valueTrips .cards .card .text-section h1{
+    /* padding-bottom: 0.6em; */
+padding:0.4em 1.2em;
+
+}
+.valueTrips .cards .card .text-section p{
+    /* padding-bottom: 0.6em; */
+padding:0.6em 1.2em;
+
+
+}
+
+.valueTrips .cards .card .text-section .price{
+padding: 0.3em;
+color: white;
+background-color: gray;
+border-top-right-radius: 8px;
+border-bottom-right-radius:8px ;
+font-weight: bolder;
+
+}
+
+/* Popular Destination */
+
+.popularDest{
+padding: 4em 1em;
+/* background-color: black ;
+opacity: 0.8; */
+background-color: rgba(126, 89, 161, 0.48);
+background-color: ;
+}
+
+
+.popularDest .title{
+    text-align: center;
+    padding: 1.2em 0;
+    color: white;
+    font-weight: bold;
+}
+
+.popularDest .title h1{
+    font-size: 2.2em;
+}
+
+.popularDest .title p{
+    font-size: 1.2em;
+    
+}
+
+.popularDest .cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.popularDest .cards .card{
+    height: 18em;
+    width: 14em;
+    border-radius: 08px;
+    background-color: blue;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    color: white;
+    flex-wrap: wrap;
+
+    
+}
+
+.popularDest .cards #card1{
+
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url(../image/gilgit.jpg) center/cover no-repeat ;
+    
+}
+.popularDest .cards #card2{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url(../image/gilgit.jpg) center/cover no-repeat ;
+    
+}
+.popularDest .cards #card3{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url(../image/gilgit.jpg) center/cover no-repeat ;
+    
+}
+.popularDest .cards #card4{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)) ,url(../image/gilgit.jpg) center/cover no-repeat ;
+    
+}
+.popularDest .cards .card h3{
+    padding: 0.8em;
+
+}
+
+/* Review */
+
+.review{
+
+}
+.review .title{
+    text-align: center;
+    padding: 1.2em 0;
+    font-weight: bold;
+}
+.review .title h1{
+    font-size: 2.2em;
+    
+}
+
+.review .cards{
+ display: flex;
+ justify-content: space-evenly;
+ align-items: center;
+
+    
+}
+.review .cards .card{
+    width: 24em;
+    height: 08em;
+    border-radius: 08px;
+    /* background-color: yellow; */
+background-color: rgba(126, 89, 161, 0.48);
+
+    display: flex;
+    padding: 0.4em;
+    justify-content: center;
+    align-items: center;
+}
+.review .cards .card img{
+  width: 5em;
+  height: 5em;
+  margin: .04em;
+
+
+    
+}
+.review .cards .card p{
+width: 98%;
+text-align: justify;
+}
+
+.review .cards .card p img{
+    float: right;
+    width: 7em;
+    height: 1.6em;
+    margin-top: 1em;
+}
+
+
+
+/* Mobile VIew */
+@media (max-width:655px) {
+    /* Header */
+    header .title h1{
+        font-size: 2.8em;
+        }
+        
+        header .title p{
+        font-size: 1.2em;
+        }
+
+    .nav ul{
+        display:none;
+        /* have to be block */
+     }
+    .title h1{
+        font-size: 2.8em;
+        }
+    .card{
+        margin: 1.2em 0;
+    }
+    .explore{
+        padding: 1em;
+        font-size: 2em;
+    }
+
+    .valueTrips .cards .card{
+        width: 18em;
+        }
+        
+    .valueTrips .cards .card img{
+        width: 18em;  
+    }
+   .review .cards{
+    flex-direction: column;
+   }
+   .review .cards .card {
+    flex-direction: column;
+    }
+   .review .cards .card p{
+    width: 98%;
+    }
+    .review .cards .card{
+        width: 20em;
+         height: 12em;
+
+    }
+    .review .cards .card p img{
+        width: 6em;
+        height: 1.2em;
+    }
+}
+@media (max-width:773px){
+    .review .cards{
+        flex-direction: column;
+       }
+       .review .cards .card p{
+        width: 98%;
+        }
+}
